@@ -75,7 +75,7 @@ export default function CardView() {
       {renderDiscImage()}
 
       <Divider />
-      <BuyButton />
+      {/* <BuyButton /> */}
       {renderPriceControls()}
     </View>
   );

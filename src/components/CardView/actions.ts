@@ -42,7 +42,7 @@ export const handleNextItem = async (
   discData: AlbumModel | null,
   setDiscData: React.Dispatch<React.SetStateAction<AlbumModel | null>>
 ) => {
-  if (discData && discData.id < 6) {
+  if (discData && discData.id < 15) {
     const response = await fetchGetDiscData(discData.id + 1, setDiscData);
     if (response) {
       setDiscData(response);
